@@ -1,0 +1,394 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :root {
+   
+    --main-transition: 0.3s;
+   
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    font-family: "Cairo", sans-serif;
+     
+  }
+  ul{
+     list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  /* start global rules*/
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 767px) {
+    .container {
+      width: 700px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 900px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1000px;
+    }
+}
+
+/* start header*/
+.header{
+   
+  
+    padding: 10px 0;
+  position: absolute;
+     left: 0;
+     width: 100%;
+     z-index: 2;
+}
+.header .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .logo a{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.header .nav-bar ul{
+display: flex;
+
+}
+.header .nav-bar ul a{
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+@media (max-width:767px){
+  .header .nav-bar ul a{
+  font-size: 10px;
+  padding: 13px;
+  
+}
+}
+/* end header*/
+/* start landing*/
+.landing{
+    background-image: url('WhatsApp Image 2024-07-12 at 13.57.12_68598b57.jpg');
+    position: relative;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    left: 0;
+  }
+
+  .landing::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+  }
+ 
+  .landing .text{
+    color: white;
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (max-width:767px){
+    .landing .contact{
+
+    } 
+    .landing .text{
+   text-align: center;
+   width: 90%;
+ 
+    }
+    .landing .text h3{
+ 
+        text-align: center;
+        font-size: 21px;
+
+  }
+}
+
+  .landing .text button{
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+  }
+/* end landing*/
+/* start studio */
+.studio{
+    padding-top: 60px;
+    padding-bottom: 60PX;
+    text-align: center;
+}
+.studio .container{
+    text-align: center;
+    
+}
+.studio h4{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 400;
+
+}
+.studio p{
+    width: 700px;
+    margin: 40px auto;
+    max-width: 100%;
+    font-size: 21px;
+    color: #777;
+
+}
+.studio .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.studio .images img{
+    max-width: 100%;
+    width: 400px;
+    flex-basis: 45%;
+    padding: 10px;
+}
+@media (max-width:991px){
+    .studio .images img{
+     width: 250px;
+    }
+    .studio p{
+        width: 500px;
+    }
+}
+@media (max-width:767px){
+    .studio .images img{
+     width:100%;
+   padding:10px 0;
+     
+    }
+    .studio p{
+        font-size: 15px;
+        width: 450px;
+    }
+}
+
+/* end studio*/
+/*start girls */
+.girls{
+ 
+    padding-bottom: 60PX;
+    
+}
+.girls .container{
+  width: 100%;
+ 
+}
+.girls h6{
+text-align: center;
+font-size: 32px;
+font-weight: 100;
+margin: 20px auto 40px;
+}
+ .girls .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.girls .content .box{
+    flex-basis: 25%;
+    padding: 10px 0;
+ 
+}
+@media (max-width:991px){
+    .girls .content .box{
+      flex-basis: 45%;
+      padding: 10px;
+  }
+
+}
+@media (max-width:767px){
+    .girls .content .box{
+        flex-basis: 100%;
+    }
+}
+.girls .content .box img{
+    max-width: 100%;
+    padding: 10px 0
+}
+
+.girls .content .box p{
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+
+
+}
+.girls .content .box h5{
+    text-align: center;
+    font-size: 16px;
+    margin: -2px 0 0 0;
+}
+.girls ul{
+    display: flex;
+    justify-content: center;
+}
+.girls ul li {
+    width: 5px;
+    height: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 3px;
+    margin: 20px 4px 0;
+}
+.girls ul .one{
+    background-color: #ccc;
+}
+.girls ul .two{
+    background-color: #777;
+}
+/* end girls*/
+/* start contacts*/
+.contact{
+  background-image: url(../imags/form.jpg);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ede7e7;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.contact .container{
+   text-align: center;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.contact h4{
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0 0 20px;
+}
+.contact input{
+  height: 35px;
+  margin: 0 0 20px;
+  background-color: white;
+  box-shadow: 0 0 110px #ddd;
+  border: none;
+  padding: 10px;
+  z-index: 99;
+
+}
+.contact .back{
+  justify-content: space-between;
+  display: flex;
+  margin-top: 45px;
+} 
+.contact .name{
+  flex-basis: 48%;
+}
+
+.contact .mail{
+  flex-basis: 48%;
+}
+.contact .subject{
+
+  width: 100%;
+}
+.contact .message{
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  box-shadow: 0 0 110px #ddd;
+  border: none;
+  padding: 10px;
+
+}
+.contact button{
+  margin-top: 45px;
+    background-color: #17c117;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+}
+@media (max-width:767px){
+  .contact .container .back{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .contact .container .name{
+    width:100% ;
+
+  }
+  .contact .container .mail{
+    width: 100%;
+  }
+   .contact button {
+    margin-top: 25px;
+}
+}
+/* end contact*/
+/* start footer*/
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60PX;
+}
+
+.footer .container .content{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+gap: 40px;
+}
+.footer .container .content .box{
+padding: 10px;
+}
+.footer .container .content .box h5{
+  margin: 0;
+  font-size: 34px;
+  font-weight: 400;
+}
+.footer .container .content .box p{
+  width: 301px;
+  color: #777;
+  font-size: 15px;
+  line-height: 2;
+  max-width: 100%;
+
+}
+.footer .container .content  .box .p-2{
+  width: 250px;
+} 
+.footer .container .content  .box .social-icons{
+  text-align: center;
+}
+.footer .container .content  .box .social-icons i{
+
+padding: 0 6px;
+}
+.footer .copyright{
+  text-align: center;
+    color: #777;
+
+}
